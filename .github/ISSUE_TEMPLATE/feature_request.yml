@@ -1,0 +1,44 @@
+name: Feature Request
+about: Suggest an idea for a new feature or enhancement.
+labels: ["enhancement", "needs-scoping"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing to SUSOS! Please provide the following information to help us understand your feature request.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Description
+      description: What problem is this feature trying to solve? Why is this important?
+      placeholder: Describe the issue you're facing and why this improvement matters.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the feature you're proposing in detail.
+      placeholder: How should the feature work? What would the ideal behavior be?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered any alternative solutions or features?
+      placeholder: If there are alternative ways to solve this problem, please describe them.
+    validations:
+      required: false
+  - type: checkboxes
+    id: stakeholders
+    attributes:
+      label: Stakeholders
+      description: Who will benefit from this feature?
+      options:
+        - label: End User
+          required: false
+        - label: Developer
+          required: false
+        - label: Administrator
+          required: false
